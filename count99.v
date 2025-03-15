@@ -95,13 +95,13 @@ endmodule
 
 
 
-module timer #(
-    parameter TIMER_WAIT = 27_000; // 1ms間隔で出力
-) (
+module timer (
     input  wire i_rst,
     input  wire i_clk,
     output wire o_overflow 
 );
+
+    parameter TIMER_WAIT = 27_000; // 1ms間隔で出力
 
     reg [14:0] r_cnt = 0;
     reg        r_overflow = 0;
@@ -113,7 +113,7 @@ module timer #(
             r_cnt <= 0;
             r_overflow <= 0;
         end else begin
-            if (r_cnt == WAIT-1) begin
+            if (r_cnt == TIMER_WAIT-1) begin
                 r_cnt <= 0;
                 r_overflow <= 1;
             end else begin
