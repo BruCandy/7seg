@@ -1,4 +1,4 @@
-module 7seg_base (
+module seven_seg (
     output wire [7:0] o_seg,    // Positive Logic
     output wire [3:0] o_dig     // Negative Logic
 );
