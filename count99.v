@@ -108,7 +108,7 @@ module timer (
 
     assign o_overflow = r_overflow;
 
-    always @(posedge i_clk or i_rst) begin
+    always @(posedge i_clk) begin
         if (i_rst) begin
             r_cnt <= 0;
             r_overflow <= 0;
