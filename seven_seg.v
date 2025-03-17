@@ -1,6 +1,6 @@
 module seven_seg (
-    output wire [7:0] o_seg,    // Positive Logic
-    output wire [3:0] o_dig     // Negative Logic
+    output wire [7:0] o_seg,
+    output wire [3:0] o_dig
 );
 
     assign o_seg = 8'b11111100;
