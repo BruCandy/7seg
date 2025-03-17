@@ -11,7 +11,7 @@ module count99 (
     parameter TIMER_WAIT = 27_000;
 
     reg [BITS-1:0]  r_wait = 0;
-    reg [5:0]   r_cnt = 0;
+    reg [6:0]   r_cnt = 0;
     reg [7:0]   r_seg1 = 8'b11111100;
     reg [7:0]   r_seg2 = 8'b11111100;
     reg [1:0]   r_dig = 0;

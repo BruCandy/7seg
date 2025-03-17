@@ -28,12 +28,7 @@ module count99_tb();
         i_rst <= 0; #30;
         i_rst <= 1;
 
-        #5000;  
-
-        i_rst <= 0; #30;
-        i_rst <= 1;
-
-        #5000;  
+        #150000;  
 
         $finish;
     end
