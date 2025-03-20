@@ -56,7 +56,7 @@ module count99 (
             r_dig  <= 0;
         end else begin
             if (w_tick) begin
-                r_dig <= ~r_dig;
+                r_dig <= ~ r_dig;
             end
 
             if (r_cnt == MAX+1) begin
