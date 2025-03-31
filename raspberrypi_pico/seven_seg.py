@@ -13,10 +13,10 @@ segs = {
 }
 
 digs = {
-    1: Pin(13, Pin.OUT),
-    2: Pin(12, Pin.OUT),
-    3: Pin(11, Pin.OUT),
-    4: Pin(10, Pin.OUT),
+    1: Pin(13, Pin.OUT), # 千の位
+    2: Pin(12, Pin.OUT), # 百の位
+    3: Pin(11, Pin.OUT), # 十の位
+    4: Pin(10, Pin.OUT), # 一の位
 }
 
 # dp(小数点)は使用しない

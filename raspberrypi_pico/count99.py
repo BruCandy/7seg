@@ -14,10 +14,10 @@ segs = {
 }
 
 digs = {
-    1: Pin(13, Pin.OUT),
-    2: Pin(12, Pin.OUT),
-    3: Pin(11, Pin.OUT),
-    4: Pin(10, Pin.OUT),
+    1: Pin(13, Pin.OUT), # 千の位
+    2: Pin(12, Pin.OUT), # 百の位
+    3: Pin(11, Pin.OUT), # 十の位
+    4: Pin(10, Pin.OUT), # 一の位
 }
 
 # dp(小数点)は使用しない
@@ -48,13 +48,13 @@ def set_dig(dig):
         digs[d].value(active)
 
 # 2桁の数字を表示（ダイナミック点灯）
-def show_number(value):
+def show_number(val):
     #10の位
-    set_seg(int(value / 10) % 10) 
+    set_seg(int(val / 10) % 10) 
     set_dig(3)
     time.sleep(0.005) # 5ms間隔
     #1の位
-    set_seg(value % 10) 
+    set_seg(val % 10) 
     set_dig(4)
     time.sleep(0.005) # 5ms間隔
 
