@@ -49,11 +49,11 @@ def set_dig(dig):
 
 # 2桁の数字を表示（ダイナミック点灯）
 def show_number(val):
-    #10の位
+    #十の位
     set_seg(int(val / 10) % 10) 
     set_dig(3)
     time.sleep(0.005) # 5ms間隔
-    #1の位
+    #一の位
     set_seg(val % 10) 
     set_dig(4)
     time.sleep(0.005) # 5ms間隔
