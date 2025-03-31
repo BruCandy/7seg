@@ -42,14 +42,14 @@ Tang Nano 9K のピン配置は、`7seg/tang_nano_9k` 内の **`.cst` ファイ�
 ### 7セグメントLEDに数字を表示
 - **Verilog:** [`seven_seg.v`](7seg/tang_nano_9k/seven_seg.v)
 
-実装した要素を以下に示します。
+実装した様子を以下に示します。
 <p align="center">
   <img src="docs/data/sevenseg_fpga.jpg" alt="No　date" width="240" height="320">
 </p>
 
 - **Python:** [`seven_seg.py`](7seg/raspberrypi_pico/seven_seg.py)
 
-実装した要素を以下に示します。
+実装した様子を以下に示します。
 <p align="center">
   <img src="docs/data/sevenseg_raspberrypi.jpg" alt="No　date" width="240" height="320">
 </p>
@@ -58,20 +58,24 @@ Tang Nano 9K のピン配置は、`7seg/tang_nano_9k` 内の **`.cst` ファイ�
 - **Verilog:** [`count9.v`](7seg/tang_nano_9k/count9.v)
 
 実装した様子を以下に示します。
+
 ![demo](docs/data/count9_fpga.gif)
 
 - **Python:** [`count9.py`](7seg/raspberrypi_pico/count9.py)
 
 実装した様子を以下に示します。
+
 ![demo](docs/data/count9_raspberrypi.gif)
 
 ### 0～99 までのカウント
 - **Verilog:** [`count99.v`](7seg/tang_nano_9k/count99.v)
 
 実装した様子を以下に示します。
+
 ![demo](docs/data/count99_fpga.gif)
 
 - **Python:** [`count99.py`](7seg/raspberrypi_pico/count99.py)
 
 実装した様子を以下に示します。
+
 ![demo](docs/data/count99_raspberrypi.gif)
