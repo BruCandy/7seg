@@ -47,6 +47,6 @@ def set_dig(dig):
         digs[d].value(active)
 
 
-# 1桁目に9を表示
+# 1桁目に0を表示
 set_seg(0)
 set_dig(4)
