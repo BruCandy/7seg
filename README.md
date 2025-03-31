@@ -5,6 +5,7 @@
 現在、99 までのカウントが実装されており、今後もアップデートの可能性があります。
 
 ## ハードウェア構成
+本プロジェクトでは、**Tang Nano 9K** は市販のTang Nano 9K学習用基板（[参考サイト](https://fpga.tokyo/mhut/)）を使用し、**Raspberry Pi Pico 2** は **自作の7セグメント接続基板** を用いて構成しています。
 
 ### Tang Nano 9K ピン配置
 Tang Nano 9K のピン配置は、`7seg/tang_nano_9k` 内の **`.cst` ファイル** を参照してください。
